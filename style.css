@@ -1,0 +1,94 @@
+@import url('https://fonts.google.com/specimen/Montserrat');
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+
+
+body{
+    
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+
+.card-container{
+    background-color: #fff;
+    display: flex;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    flex-wrap: wrap;
+}
+.left-card{    width: 50%;
+    background-image: url('./images/image-product-desktop.jpg') !important;
+height: 100%;
+background-size: cover;
+}
+.right-card{
+    width: 50%;
+}
+
+/* .left-card img{
+    max-width: 100%;
+    height: auto;
+} */
+.header{
+    margin-left: 6%;
+    /* padding-right: 23%; */
+margin-right: 15px;
+}
+.btn{
+    margin-left: 6%;
+    padding: 15px 25px;
+    width: 50%;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+.header h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.header h4{
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    color: #a9a9a9;
+    font-weight: 500;
+}
+.header p{
+    font-size: 14px;
+    line-height: 28px;
+    color: #a9a9a9;
+    font-weight: 600;
+}
+.header h3{
+    color: hsl(158, 36%, 37%);
+}
+.header h3 span{
+    font-size: 14px;
+    color: #ccc;
+}
+@media screen and(min-width:600px) {
+    
+    
+}
+@media screen and (max-width: 600px) {
+    .card-container{
+        background-color: #fff;
+    }
+    .left-card{
+        width: 100% !important;
+        background-image: url('./images/image-product-mobile.jpg') !important;
+    }
+    .right-card{
+        width: 100% !important;
+        background-color: white;
+    }
+  }
